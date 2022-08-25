@@ -6,18 +6,22 @@
         {
             while (true)
             {
-                Console.WriteLine("\nselect program\n 1.FlipCoin\n 2.SwapTwoNo");
+                Console.WriteLine("\nselect program\n 1.FlipCoin\n 2.SwapTwoNo\n 3.EvenOdd");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
                         FlipCoin flipCoin = new FlipCoin();
                         flipCoin.ReadInput();
-                         break;
+                        break;
                     case 2:
-                        SwapTwoNumbers swap= new SwapTwoNumbers();
+                        SwapNo swap= new SwapNo();
                         swap.NumberSwaping();
-                       break;
+                        break;
+                    case 3:
+                        EvenOdd evenOdd = new EvenOdd();
+                        evenOdd.Findno();
+                        break;
 
 
                         

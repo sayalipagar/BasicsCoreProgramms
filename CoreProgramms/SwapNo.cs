@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoreProgramms
 {
-    public class SwapTwoNumbers
+    public class SwapNo
     {
         public void NumberSwaping()
         {
