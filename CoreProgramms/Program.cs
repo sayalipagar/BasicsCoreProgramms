@@ -6,7 +6,7 @@
         {
             while (true)
             {
-                Console.WriteLine("\n\n\nselect program   \n 1.FlipCoin\n 2.SwapTwoNo\n 3.EvenOdd\n 4.Vowel OR Constant\n 5.Check Leap Year\n 6.PowerOfTwo\n 7.LargestNo\n 8.QuotientReminder\n 9.FindFactors");
+                Console.WriteLine("\n\n\nselect program   \n 1.FlipCoin\n 2.SwapTwoNo\n 3.EvenOdd\n 4.Vowel OR Constant\n 5.Check Leap Year\n 6.PowerOfTwo\n 7.LargestNo\n 8.QuotientReminder\n 9.FindFactors\n 10.HarmonicNo");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 { 
@@ -47,6 +47,11 @@
                         fact.factors();
                         break;
                     case 10:
+                        HarmonicN0 harmonicN0 = new HarmonicN0();
+                        harmonicN0.HarmonicNumberSolution();
+                        break;
+
+                case 11:
                         default:
                         Console.WriteLine("Enter Correct no");
                         break;
