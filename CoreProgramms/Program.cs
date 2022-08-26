@@ -6,7 +6,7 @@
         {
             while (true)
             {
-                Console.WriteLine("\n\n\nselect program   \n 1.FlipCoin\n 2.SwapTwoNo\n 3.EvenOdd\n 4.Vowel OR Constant\n 5.Check Leap Year\n 6.PowerOfTwo\n 7.LargestNo\n 8.QuotientReminder");
+                Console.WriteLine("\n\n\nselect program   \n 1.FlipCoin\n 2.SwapTwoNo\n 3.EvenOdd\n 4.Vowel OR Constant\n 5.Check Leap Year\n 6.PowerOfTwo\n 7.LargestNo\n 8.QuotientReminder\n 9.FindFactors");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 { 
@@ -43,6 +43,10 @@
                         quotientr.QuotientReminder();
                         break;
                     case 9:
+                        Fact fact = new Fact();
+                        fact.factors();
+                        break;
+                    case 10:
                         default:
                         Console.WriteLine("Enter Correct no");
                         break;
