@@ -6,7 +6,7 @@
         {
             while (true)
             {
-                Console.WriteLine("\n select program\n 1.FlipCoin\n 2.SwapTwoNo\n 3.EvenOdd\n 4.Vowel OR Constant");
+                Console.WriteLine("\n select program\n 1.FlipCoin\n 2.SwapTwoNo\n 3.EvenOdd\n 4.Vowel OR Constant\n 5.Check Leap Year");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 { 
@@ -25,8 +25,11 @@
                     case 4:
                         VowelConsonant vowelConsonant=new VowelConsonant();
                         vowelConsonant.VowelOrConsonant();
-                        
-  break;
+                       break;
+                    case 5:
+                        LeapYear leapYear = new LeapYear();
+                        leapYear.Year();
+                        break;
 
 
 
