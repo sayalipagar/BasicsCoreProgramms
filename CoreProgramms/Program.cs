@@ -6,7 +6,7 @@
         {
             while (true)
             {
-                Console.WriteLine("\n select program\n 1.FlipCoin\n 2.SwapTwoNo\n 3.EvenOdd\n 4.Vowel OR Constant\n 5.Check Leap Year");
+                Console.WriteLine("\n select program\n 1.FlipCoin\n 2.SwapTwoNo\n 3.EvenOdd\n 4.Vowel OR Constant\n 5.Check Leap Year\n 6.PowerOfTwo");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 { 
@@ -29,6 +29,11 @@
                     case 5:
                         LeapYear leapYear = new LeapYear();
                         leapYear.Year();
+                        break;
+                    case 6:
+                        PowerTwo powerTwo = new PowerTwo();
+                        powerTwo.PowerOfTwoSolution();
+                     
                         break;
 
 
